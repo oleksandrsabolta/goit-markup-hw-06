@@ -24,8 +24,8 @@
 
 .modal {
   background: #fcfcfc;
-  width: calc(100% - 32px);
-  max-width: 408px;
+  width: 288px;
+  max-width: 288px;
   border-radius: 4px;
   padding: 16px;
   box-sizing: border-box;
@@ -228,23 +228,10 @@ textarea::placeholder {
 
 @media (min-width: 768px) {
   .modal {
-    width: 100%;
+    width: 408px;
     max-width: 408px;
     padding: 24px;
   }
-}
-@media (min-width: 1158px) {
-  .modal {
-    padding: 32px;
-    max-width: 480px;
-  }
-}
-.modal-form,
-.modal-form input,
-.modal-form textarea,
-.modal-submit {
-  width: 100%;
-  box-sizing: border-box;
 }
 .modal-submit {
   max-width: 169px;
