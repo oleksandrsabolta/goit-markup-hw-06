@@ -54,7 +54,7 @@
 .features-item-text {
   margin: 0;
   color: #434455;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -73,10 +73,11 @@
   .features-item-title {
     font-size: 36px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
   }
   .features-item-text {
     font-weight: 500;
+    font-size: 16px;
   }
 }
 

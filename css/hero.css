@@ -6,7 +6,7 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 72px;
+  margin-bottom: 0px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
+  gap: 72px;
 }
 .hero {
   max-width: 1440px;
@@ -69,7 +69,6 @@
 
   .hero-title {
     max-width: 496px;
-    margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07;
   }
@@ -90,8 +89,8 @@
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero-bg-desktop@1x.jpg");
   }
-  .hero-title {
-    margin-bottom: 48px;
+  .hero-container {
+    gap: 48px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
