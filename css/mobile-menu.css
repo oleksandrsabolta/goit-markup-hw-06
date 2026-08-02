@@ -1,51 +1,102 @@
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: #2e2f42;
-  color: #fff;
-  display: none;
+  background: #ffffff;
+
+  display: flex;
   flex-direction: column;
-  padding: 24px;
+
+  padding: 24px 24px 40px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   z-index: 1200;
-  overflow-y: auto;
 }
 
 .mobile-menu.is-open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu-close {
-  align-self: flex-end;
-  background: transparent;
-  border: none;
-  color: #fff;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(46, 47, 66, 0.1);
+
+  background: #fff;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-bottom: 32px;
 }
 
 .mobile-menu-list {
-  margin-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 0;
+  gap: 40px;
 }
 
 .mobile-menu-list a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
-
-.mobile-menu-contacts {
+.mobile-menu-list .active {
+  color: #404bbf;
+}
+.mobile-menu-address {
   margin-top: auto;
+  font-style: normal;
+}
+.mobile-menu-address ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
+}
+.mobile-phone {
+  color: #4d5ae5;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.mobile-email {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.mobile-social-list {
+  display: flex;
+  gap: 40px;
+  margin-top: 48px;
+}
+.mobile-social-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #4d5ae5;
 }
 
 @media (min-width: 768px) {
