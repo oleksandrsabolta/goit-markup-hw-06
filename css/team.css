@@ -16,16 +16,8 @@
 .team p {
   text-align: center;
 }
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 72px;
-}
 .team-card {
   width: 264px;
-  flex: 0 0 264px;
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
   overflow: hidden;
@@ -103,27 +95,24 @@
     0 2px 4px rgba(46, 47, 66, 0.06);
 }
 .team-list {
-  grid-template-columns: 1fr;
   display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 72px;
 }
-
-/* Tablet: 2 колонки */
 @media (min-width: 768px) and (max-width: 1157px) {
   .team-list {
     grid-template-columns: repeat(2, 264px);
     justify-content: center;
-    display: grid;
 
     column-gap: 24px;
     row-gap: 64px;
   }
 }
-
-/* Desktop: 4 колонки */
 @media (min-width: 1158px) {
   .team-list {
-    display: grid;
     grid-template-columns: repeat(4, 264px);
+    justify-content: center;
     gap: 24px;
   }
 }
