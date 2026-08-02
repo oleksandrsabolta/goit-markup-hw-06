@@ -1,3 +1,9 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   max-width: 216px;
   font-weight: 700;
@@ -6,6 +12,7 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 72px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -28,8 +35,9 @@
   gap: 72px;
 }
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 72px 0;
-
   background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,7 +75,7 @@
 
   .hero-title {
     max-width: 496px;
-
+    margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07;
   }
@@ -88,9 +96,8 @@
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero-bg-desktop@1x.jpg");
   }
-
-  .hero-container {
-    gap: 48px;
+  .hero-title {
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
