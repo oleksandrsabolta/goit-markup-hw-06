@@ -162,6 +162,10 @@
     padding: 96px 0;
   }
 
+  .footer-logo {
+    margin: 0 0 16px;
+  }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -210,22 +214,28 @@
     padding: 100px 0;
   }
 
+  .footer-logo {
+    margin: 0 0 16px;
+  }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
-    gap: 120px;
+    gap: 0px;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
   }
 
   .footer-info {
+    margin-right: 120px;
     text-align: left;
     flex: 0 0 auto;
   }
 
   .footer-socials {
+    margin-right: 80px;
     flex: 0 0 auto;
     text-align: left;
   }
@@ -249,6 +259,11 @@
 
   .subscribe-form input {
     width: 264px;
+  }
+  .footer-info,
+  .footer-socials,
+  .footer-subscribe {
+    width: auto;
   }
 }
 .footer-text {

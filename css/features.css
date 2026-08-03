@@ -24,11 +24,12 @@
 
 .features-item {
   display: block;
+  width: 100%;
 }
 
 .features-icon-box {
   display: none;
-  width: 264px;
+  width: 100%;
   height: 112px;
 
   justify-content: center;
@@ -49,6 +50,7 @@
   color: #2e2f42;
   margin: 0 0 8px 0;
   text-align: center;
+  max-width: 264px;
 }
 
 .features-item-text {
@@ -86,7 +88,7 @@
     padding: 120px 0;
   }
   .features-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 264px);
     gap: 72px 24px;
   }
   .features-item {
