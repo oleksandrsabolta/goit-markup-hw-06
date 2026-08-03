@@ -18,6 +18,11 @@
 
   z-index: 1200;
 }
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .mobile-menu.is-open {
   opacity: 1;
@@ -39,7 +44,7 @@
   align-items: center;
 
   margin-left: auto;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .mobile-menu-list {
@@ -54,6 +59,7 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-decoration: none;
 }
 .mobile-menu-list .active {
   color: #404bbf;

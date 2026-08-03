@@ -31,12 +31,7 @@
 .footer-logo {
   display: block;
   width: fit-content;
-  margin: 0 auto 16 px;
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -187,9 +182,6 @@
     order: 2;
     text-align: left;
   }
-  .footer-info {
-    margin-right: 120px;
-  }
   .footer-subscribe {
     margin-left: auto;
   }
@@ -221,8 +213,8 @@
   .footer-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0;
     align-items: baseline;
+    gap: 120px;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
